@@ -1,0 +1,5 @@
+{% extends 'base.html' %} {% block content %}
+<h1>Item</h1>
+{% for ob in object %}
+<h2>{{ ob.id }}</h2>
+<h3>{{ ob.name }}</h3> {% if ob.description %}{{ ob.description }}{% else %}Descriptions comming soon{% endif %} , {{ ob.price }} {% endfor %}{% endblock %}

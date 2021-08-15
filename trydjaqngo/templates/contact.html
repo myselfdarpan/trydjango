@@ -1,0 +1,13 @@
+{% extends 'base.html' %} {% block content %}
+<h1> HI I AM contact </h1>
+<p> template is working </p>
+<p>
+    My name is: {{ name }}, and age: {{ age }}, {{ lister }}
+</p>
+
+<ul>
+    {% for My_item in lister %}
+    <li>{{ My_item }}</li>
+    {% endfor %}
+</ul>
+{% endblock content %}
